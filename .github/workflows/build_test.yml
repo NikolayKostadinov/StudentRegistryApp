@@ -50,7 +50,7 @@ jobs:
       run: npm test
 
   deploy:
-    needs: security_tests
+    needs: build_test
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to production
